@@ -1,0 +1,77 @@
+.header{
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.left-session {
+ 
+  display: flex;
+  align-items: center;
+
+}
+.menu {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.u-logo {
+  height: 20px;
+}
+
+
+
+
+
+.middle-session {
+  display: flex;
+  align-items: center;
+ 
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+}
+.search {
+  border-color: rgb(219, 219, 219);
+  flex: 1;
+  padding-top: 2px;
+  padding-right: 6px;
+  padding-left: 10px;
+  height: 36px;
+  text-size-adjust: 100%;
+  border-radius: 2px;
+  box-shadow:inset 1px 2px 1px rgba(177, 176, 176,0.05); ;
+  
+}
+.search::placeholder{
+  font-family: Roboto ,Arial;
+ 
+}
+
+.search-b {
+  border-color: rgb(177, 176, 176);
+  border-radius: 2px;
+  height: 41px;
+  size-adjust: 100%;
+  width: 60px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(177, 176, 176);
+  background-color:white;
+  
+}
+.search-icon {
+  height: 25px;
+}
+
+.voice-search-button {
+  width: 60px;
+  height: 36px;
+}
+ 
+.right-session {
+  background-color: aquamarine;
+  width: 200px;
+}
