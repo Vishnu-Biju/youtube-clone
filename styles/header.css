@@ -3,6 +3,19 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  
+  border-color: rgb(211, 211, 211);
+  position: fixed;
+  top: 0px;
+  height: 60px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index:100;
+  
+  
 
 }
 .left-session {
@@ -34,6 +47,7 @@
   max-width: 500px;
 }
 .search {
+  border-style: solid;
   border-color: rgb(219, 219, 219);
   flex: 1;
   padding-top: 2px;
@@ -42,6 +56,7 @@
   height: 36px;
   text-size-adjust: 100%;
   border-radius: 2px;
+  width: 0;
   
  
   
@@ -59,34 +74,135 @@
   width: 60px;
   height: 42px;
   border-radius: 2px;
-  
+  border-style: solid;
  
   border-color: rgb(219, 219, 219);
   margin-left: -1px;
-
+  margin-right: 10px;
+  background-color: rgb(242, 242, 242);
+   
+ 
 }
-.search-b :active{
-  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
-
-}
+.search-b,
+.voice-search-button,
+.upload-tool ,
+.u-app-tool ,
+.notification-container,
+.pro-pic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
+  position:relative;
+}
+
+
+.search-b .tool-kit,
+.voice-search-button .tool-kit,
+.upload-tool .tool-kit,
+.u-app-tool .tool-kit,
+.notification-container .tool-kit,
+.pro-pic .tool-kit{
+  font-family: Roboto,Arial;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 3px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+
+}
+.search-b:hover .tool-kit,
+.voice-search-button:hover .tool-kit,
+.upload-tool:hover .tool-kit,
+.u-app-tool:hover .tool-kit,
+.notification-container:hover .tool-kit,
+.pro-pic:hover .tool-kit{
+  opacity: 1;
+}
+
+
+.search-b:active {
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  background-color: white;
+}
+
  
   
   
 
 .search-icon {
   height: 25px;
-  margin-top: 5px;
+  
+  background-color: rgb(242, 242, 242);
+
 
   
 }
+.search-icon:active {
+  background-color: white;
+}
 
 .voice-search-button {
-  width: 60px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(242, 242, 242);
+
+}
+
+.voice-search-icon {
+  height: 24px;
+  
+  
 }
  
 .right-session {
-  background-color: aquamarine;
+
   width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+.upload {
+  height: 24px;
+}
+.apps {
+  height: 24px;
+}
+.notification {
+  height: 24px;
+}
+.notification-container {
+  position: relative;
+}
+.notification-number {
+  position: absolute;
+  top: -3px;
+  right: 0;
+  background-color: rgb(203, 8, 8);
+  color: white;
+  font-family:Roboto,Arial;
+  font-size: 9px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius:12px ;
+
+
+}
+.profile-pic {
+  height: 32px;
+  border-radius: 16px;
 }
